@@ -35,5 +35,10 @@ namespace login
         {
             return _database.InsertAsync(script);
         }
+        
+        public void dosome(){
+
+
+        }
     }
 }
