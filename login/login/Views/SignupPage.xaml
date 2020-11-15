@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="login.SignupPage"
+             Title="Sign UP">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Padding="5" CornerRadius="10">
+                <StackLayout HeightRequest="80">
+                    <Image Source="logo.jpg" Aspect="AspectFit"></Image>
+                </StackLayout>
+
+            </Frame >
+          
+                <StackLayout HeightRequest="35">
+                    <Label Text="Please fill the form to sign up" 
+                      HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           FontSize="Title"
+                           TextColor="Black"
+                           />
+                </StackLayout>
+
+
+
+            <StackLayout Padding="20,5,20,0">
+                <Entry x:Name="firstnameEntry"
+               Placeholder="Enter first name" />
+                    <Entry x:Name="lastnameEntry"
+               Placeholder="Enter last name" />
+                    <Entry x:Name="ageEntry"
+               Placeholder="Enter age" Keyboard="Numeric" />
+                    <Entry x:Name="emailEntry"
+               Placeholder="Enter your email" />
+                    <Entry x:Name="passwordEntry" IsPassword="True"
+               Placeholder="Enter your password" />
+
+
+                    <Button Text="Sign Up" x:Name="Add"
+                Clicked="Add_Clicked" />
+                  
+                    <ListView x:Name="listView">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding FirstName}"
+                              Detail="{Binding Email}
+                              "/>
+
+
+
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+               
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

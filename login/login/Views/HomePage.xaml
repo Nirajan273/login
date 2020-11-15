@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="login.Views.HomePage"
+             Title="Home">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+
+                </StackLayout>
+                <ScrollView Grid.Row="1">
+                    <StackLayout Orientation="Vertical" Padding="0,10,0,0">
+                        <Frame Padding="5" CornerRadius="10">
+                            <StackLayout HeightRequest="50">
+                                <Image Source="logo.jpg" Aspect="AspectFit"></Image>
+                            </StackLayout>
+
+                        </Frame >
+                        <Frame Padding="5" CornerRadius="500">
+                            <StackLayout HeightRequest="10000" >
+                                <Image Source="home.jpg" Aspect="AspectFit"></Image>
+                                <Label Text=" Guardain Property and Construction provides consultancy and specialist advisory services to principals, contractors,Sub-contractors,financers and suolier in construction, oil and gas, infrastructure and related projects."
+                                     
+                       TextColor="Black" 
+                       HorizontalTextAlignment="Center"
+                       FontSize="Large"/>
+                            </StackLayout>
+
+                        </Frame >
+                      
+
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

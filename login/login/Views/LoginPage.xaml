@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="login.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Padding="5" CornerRadius="10">
+                <StackLayout HeightRequest="200">
+                 <Image Source="home.jpg" Aspect="AspectFit"></Image>
+                </StackLayout>
+
+            </Frame >
+            <Frame Padding="5" CornerRadius="10">
+                <StackLayout HeightRequest="50">
+                    <Image Source="logo.jpg" Aspect="AspectFit"></Image>
+                </StackLayout>
+
+            </Frame >
+
+            <StackLayout Padding="20,60,20,0">
+            <Entry x:Name="email" Placeholder="Input your Email here"/>
+            <Entry x:Name="password" Placeholder="Input your Password here"/>
+        </StackLayout>
+        <StackLayout Padding="10,20,10,0" VerticalOptions="Center">
+                <Button VerticalOptions="Center" x:Name="login" Text="Login" Clicked="login_Clicked" />
+
+                <Button VerticalOptions="Center" x:Name="Signup" Text="Signup" Clicked="Signup_Clicked"
+                    />
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="login.Views.ProjectPage"
+             Title="Projects">
+    <ContentPage.Content>
+        
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+
+                </StackLayout>
+                <ScrollView Grid.Row="1">
+                    <StackLayout Orientation="Vertical" Padding="0,10,0,0">
+                    <Frame Padding="5" CornerRadius="1000">
+                        <StackLayout HeightRequest="50">
+                            <Label Text="Our Running Projects"
+                       TextColor="Black" 
+                       Padding="0,10,0,0"
+                       HorizontalOptions="Center"
+                       FontSize="Large"/>
+                        </StackLayout>
+
+                    </Frame >
+                    <Frame Padding="5" CornerRadius="500">
+                            <StackLayout HeightRequest="220">
+                                <Image Source="Project1.jpg" Aspect="AspectFit"></Image>
+                                <Label Text="Project 1"
+                       TextColor="Black" 
+                       HorizontalTextAlignment="Center"
+                       FontSize="Large"/>
+                            </StackLayout>
+
+                        </Frame >
+                        <Frame Padding="5" CornerRadius="500">
+                            <StackLayout HeightRequest="220">
+                                <Image Source="Project2.jpg" Aspect="AspectFit"></Image>
+                                <Label Text="Project 2"
+                       TextColor="Black" 
+                       HorizontalTextAlignment="Center"
+                       FontSize="Large"/>
+                            </StackLayout>
+
+                        </Frame >
+                    <Frame Padding="5" CornerRadius="500">
+                        <StackLayout HeightRequest="130">
+                            <Image Source="Project3.jpg" Aspect="AspectFit"></Image>
+                            <Label Text="Project "
+                       TextColor="Black" 
+                       HorizontalTextAlignment="Center"
+                       FontSize="Large"/>
+                        </StackLayout>
+
+                    </Frame >
+                    <Frame Padding="5" CornerRadius="500">
+                        <StackLayout HeightRequest="130">
+                            <Image Source="Project4.jpg" Aspect="AspectFit"></Image>
+                            <Label Text="Project 4"
+                       TextColor="Black" 
+                       HorizontalTextAlignment="Center"
+                       FontSize="Large"/>
+                        </StackLayout>
+
+                    </Frame >
+
+
+
+
+
+                </StackLayout>
+                </ScrollView>
+            </Grid>
+
+      
+    </ContentPage.Content>
+</ContentPage>
